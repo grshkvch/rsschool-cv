@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/svg/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .header {
+            border: 1px solid black;
+            background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+        }
+        .main {
+            border: 1px solid black;
+        }
+        .footer {
+            border: 1px solid black;
+            background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+            width: 100%;
+        }
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font: 18px/27px Montserrat, sans-serif;
+            background: linear-gradient(45deg, #EECFBA, #C5DDE8);  
+        }
+        code {
+            background: linear-gradient(45deg, #DEB887, #F5DEB3);
+        }
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-title {
+            font: bold 24px/36px Montserrat, sans-serif;
+        }
+        .nav-list {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+            
+        }
+        .nav-link {
+            padding: 0 20px;
+            line-height: 50px;
+            text-decoration-line: none;
+            font-size: 22px;
+            font-style: italic;
+            color: #800000;
+            transition: .2s;
+            
+        }
+        .nav-link:hover {
+            background:		#DEB887;
+            font-size: 24px;
+            font-style: italic;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        img {
+            object-fit: cover;
+            transition: .4s;
+        }
+        img:hover {
+            transform: scale(1.3);
+            padding: 2px;
+        }
+        a {
+            text-decoration: none;
+            color: #800000; 
+            transition: .3s;
+            font-style: italic;
+        }
+        a:hover {
+            background:		#DEB887; 
+            font: bold 110% Montserrat, sans-serif ;
+        }
+        .skills-logo {
+            padding: 10px 10px 0px 0px;
+        }
+        .skills-list {
+            list-style: none;
+        }
+        .profile-photo {
+            
+            border: 2px solid black; 
+        }
+        .profile {
+            position: absolute;
+            top: 100px;
+            right: 40px;
+            border-left: 3px solid black;
+            border-bottom: 3px solid black;
+            padding: 10px;
+            background: linear-gradient(45deg, #EECFBA, #C5DDE8);  
+            
+        }
+        @media (max-width: 768px) {
+            .section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container"></div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div class="container main-container">
+            <section class="section profile" id="profile">
+                <h1 class="section-title">Profile</h1> 
+                <img src="assets/img/me.jpg" alt="my photo" width="300" height="400" class="profile-photo">  
+                <p class="profile-text">Gryshkevich Vladimir</p>
+                 
+            </section>
+            <section class="section" id="contacts"><h2 class="section-title">Contacts</h2> 
+                <ul>
+                    <li>Mobile number: +375445158793</li>
+                    <li>Email: volody_200115@mail.ru</li>
+                    <li><a href="https://github.com/grshkvch" target="_blank">GitHub</a></li>
+                    <li>Telegram: @thereddestsun</li>
+                    <li>Discord: Grshkvch (grshkvch)#0441</li>
+                </ul>
+            </section>
+            <section class="section" id="summary"><h2 class="section-title">Summary</h2>
+                <p>My name is Vladimir, i'm twenty years old, now i'm studying at the law faculty of BSU at the 4 academic year. </p>
+                <p>I entered RS school courses cause i want to be a good programmer, to make useful stuff and make my life better.</p>
+            </section> 
+            <section class="section" id="skills"><h2 class="section-title">Skills</h2> 
+                <ul class="skills-list">
+                    <li><img src="assets/svg/html.ico" alt="html logo" class="skills-logo">Html basics</li>
+                    <li> <img src="assets/svg/css.ico" alt="css logo" class="skills-logo"> CSS basics</li>
+                    <li> <img src="assets/svg/git.ico" alt="git logo" class="skills-logo"> Git/Github</li>
+                </ul>
+            </section>
+            <section class="section" id="code"><h2 class="section-title">Code</h2> 
+                <pre><code>function multiply(a, b){
+                    a * b
+                    } </code></pre>
+            </section>
+            <section class="section" id="courses"><h2 class="section-title">Courses</h2> 
+               <p>Rolling Scopes School 2022 stage 0 (in progress)</p>
+            </section>
+            <section class="section" id="projects"><h2 class="section-title">Projects</h2> 
+                <p>Will be updated in future...</p>
+            </section>
+            <section class="section" id="education"><h2 class="section-title">Education</h2>
+                <p>Bsu law faculty. The fourth academic year. </p>
+            </section> 
+            <section class="section" id="languages"><h2 class="section-title">Languages</h2>
+                <ul>
+                    <li>Russian - native speaker</li>
+                    <li>Belarussian - native speaker</li>
+                    <li>English - B1.</li>
+                </ul>
+            </section> 
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <a href="https://github.com/grshkvch" target="_blank">Person who made this CV</a>
+            <img src="assets/svg/rs_school_js.svg" alt="RS logo" width="110" height="40">
+            <a href="https://rs.school/js/" target="_blank">If you want to make simmilar CVs, press here</a>
+            <p>2022</p>
+        </div>
+    </footer>
+</body>
+</html>
+
